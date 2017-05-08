@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest --watch",
-    "frontend:dev": "webpack-dev-server --inline --hot --devtool source-map",
+    "frontend:dev": "webpack-dev-server --inline --hot --devtool source-map --progress",
     "frontend:prod": "webpack",
     "setup": "npm i && composer install",
     "backend": "php -S localhost:3001 -t ./public ./public/index.php"
@@ -36,7 +36,9 @@
     "react-redux": "^5.0.3",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
-    "redux-saga": "^0.14.4"
+    "redux-notifications": "^3.1.0",
+    "redux-saga": "^0.14.4",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -45,8 +47,11 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-1": "^6.22.0",
     "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^0.28.1",
     "jest": "^20.0.0",
+    "postcss-loader": "^2.0.1",
     "redux-devtools": "^3.3.2",
+    "style-loader": "^0.17.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
   }
